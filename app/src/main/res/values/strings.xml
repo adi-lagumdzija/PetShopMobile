@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">petShop</string>
+    <string name="shop">Shop</string>
+    <string name="cart">Cart</string>
+    <string name="map">Map</string>
+
+</resources>
