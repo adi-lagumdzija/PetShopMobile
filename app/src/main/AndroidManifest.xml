@@ -12,14 +12,14 @@
         <activity android:name=".map"></activity>
         <activity android:name=".cart" />
         <activity android:name=".shop" />
-        <activity android:name=".mainPage" ><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".mainPage" ></activity>
         <activity android:name=".registerActivity" />
         <activity android:name=".loginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
     </application>
