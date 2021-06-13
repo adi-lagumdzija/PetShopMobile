@@ -5,54 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A4E1E3"
+    android:visibility="visible"
     tools:context=".loginActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="173dp"
-        android:gravity="center"
-        android:text="Pet shop Klara"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/username"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:hint="Enter your username"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
         android:hint="Enter your password"
+        android:textColorHint="#783CF8"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="Enter your username"
+        android:shadowColor="#6316F6"
+        android:textColor="#783CF8"
+        android:textColorHint="#783CF8"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
     <Button
         android:id="@+id/loginbutton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="80dp"
         android:onClick="openMainPageActivity"
         android:text="SIGN IN"
-        app:backgroundTint="#9C9C9C"
+        android:textSize="20sp"
+        app:backgroundTint="#783CF8"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
@@ -64,7 +62,6 @@
         android:gravity="center"
         android:text="OR"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/registerbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,21 +69,31 @@
 
     <Button
         android:id="@+id/registerbutton"
-        android:layout_width="120dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginLeft="145dp"
-        android:layout_marginTop="16dp"
 
-        android:layout_marginEnd="146dp"
-        android:layout_marginRight="146dp"
+        android:layout_marginTop="16dp"
         android:onClick="openRegisterActivity"
         android:text="REGISTER"
-        app:backgroundTint="#9C9C9C"
+        android:textSize="20sp"
+        app:backgroundTint="#783CF8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="286dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_5a5468326d5429fafba5d524801100d" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

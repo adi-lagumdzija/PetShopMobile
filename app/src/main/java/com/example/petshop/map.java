@@ -10,8 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class map extends Fragment {
+import com.google.android.gms.maps.SupportMapFragment;
 
+public class map extends Fragment {
+    SupportMapFragment supportMapFragment;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
